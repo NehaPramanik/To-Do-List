@@ -21,7 +21,16 @@ h1{
     border-radius: 5px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
 }
-
+@media (max-width: 50pc){
+    .container{
+        width: 20pc;
+    }
+}
+@media (min-width: 50pc){
+    .container{
+        width: 40pc;
+    }
+}
 .addTask{
     position: relative;
     height: 40px;
@@ -99,4 +108,18 @@ h1{
 }
 .addBtn:hover, .tickIcon:hover, .dustbin:hover{
     transform: scale(1.2);
+}
+.message:after{
+    font-family: 'Allison', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: max(3vw, 30px);
+    color: antiquewhite;
+    content: '';
+    animation: updateText 15s infinite linear;
+}
+@keyframes updateText{
+    0%{ content: "' Don't stop when you are tired; stop when you're done. '";}
+    50%{content: "' You didn't come this far to only come this far. '";}
+    100%{content: "' Your only limit is your mind. '";}
 }
