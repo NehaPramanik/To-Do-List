@@ -1,0 +1,71 @@
+body{
+    background: rgba(0, 0, 0, 0.5) url('bg4.jpg') ;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+h1{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: antiquewhite;
+    font-family: 'Permanent Marker', cursive;
+}
+.container {
+    position: absolute;
+    height: 25pc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #AC9D8E; */
+    background-color: #a7d489;
+    border-radius: 5px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+.addTask{
+    position: relative;
+    height: 40px;
+    margin: 25px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.addText{
+    height: 5px;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+    background-color: #ecf3d4;
+}
+.addBtn{
+    position: absolute;
+    height: 40px;
+    width: 45px;
+    right: 0px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.addBtn img{
+    position: relative;
+    height: 35px;
+    right: 5px;
+}
+.list{
+    position: absolute;
+    height: 77%;
+    width: 100%;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.list::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+}
