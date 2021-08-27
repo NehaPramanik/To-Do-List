@@ -41,3 +41,9 @@ function tick(index){
     else elements[index]="<strike>" + elements[index] + "</strike>";
     display();
 }
+
+//Deleting all tasks
+function clearAll(){
+    elements= [];
+    display();
+}

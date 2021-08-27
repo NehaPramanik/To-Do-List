@@ -69,9 +69,9 @@ h1{
 }
 .list{
     position: absolute;
-    height: 77%;
+    height: 65%;
     width: 100%;
-    bottom: 0;
+    bottom: 60px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -110,6 +110,21 @@ h1{
 .addBtn:hover, .tickIcon:hover, .dustbin:hover{
     transform: scale(1.2);
 }
+.clearBtn{
+    height:30px;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    background-color: rgb(224, 13, 13);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.clearBtn:hover{
+    background-color: rgb(202, 13, 13);
+}
 .message:after{
     font-family: 'Allison', cursive;
     display: flex;
@@ -120,8 +135,8 @@ h1{
     animation: updateText 15s infinite linear;
 }
 @keyframes updateText{
-    0%{ content: "' Don't stop when you are tired; stop when you're done. '";}
-    30%{content: "' Pain of discipline is better than pain of regret. '";}
-    60%{content: "' Your only limit is your mind. '";}
-    100%{content: "' Be more than your mood. '"}
+    0%{ content: "Reminder: ' Don't stop when you are tired; stop when you're done. '";}
+    30%{content: "Reminder: ' Pain of discipline is better than pain of regret. '";}
+    60%{content: "Reminder: ' Your only limit is your mind. '";}
+    100%{content: "Reminder: ' Be more than your mood. '"}
 }
