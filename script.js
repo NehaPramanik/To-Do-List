@@ -17,3 +17,19 @@ function display(){
     }
 }
 
+//Deleting task
+function del(index){
+    elements.splice(index, 1);
+    display();
+}
+
+//Tick and untick
+function tick(index){
+    if(elements[index].includes("<strike>")){
+        elements[index]=elements[index].replace("<strike>","");
+        elements[index]=elements[index].replace("</strike>","");
+    }
+    else elements[index]="<strike>" + elements[index] + "</strike>";
+    display();
+}
+
