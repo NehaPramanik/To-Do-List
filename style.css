@@ -12,6 +12,7 @@ h1{
 }
 .container {
     position: absolute;
+    margin-top: 20px;
     height: 25pc;
     top: 50%;
     left: 50%;
@@ -86,7 +87,7 @@ h1{
     text-align: left;
     transition: .2s;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     cursor: pointer;
     border-radius: 5px;
     padding-right: 80px;
@@ -120,6 +121,7 @@ h1{
 }
 @keyframes updateText{
     0%{ content: "' Don't stop when you are tired; stop when you're done. '";}
-    50%{content: "' You didn't come this far to only come this far. '";}
-    100%{content: "' Your only limit is your mind. '";}
+    30%{content: "' Pain of discipline is better than pain of regret. '";}
+    60%{content: "' Your only limit is your mind. '";}
+    100%{content: "' Be more than your mood. '"}
 }
